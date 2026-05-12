@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Photo</title>
+  <style>
+    body { margin:0; background:black; }
+    img { width:100vw; height:100vh; object-fit:contain; }
+  </style>
+</head>
+<body>
+  <script>
+    const photos = [
+      "photo1.jpg",
+      "photo2.jpg",
+      "photo3.jpg"
+    ];
+    const random = photos[Math.floor(Math.random() * photos.length)];
+    document.body.innerHTML = `<img src="${random}">`;
+  </script>
+</body>
+</html>
